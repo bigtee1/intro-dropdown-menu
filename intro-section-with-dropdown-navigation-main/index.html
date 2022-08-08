@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="nav-bar"> 
+    <div class="container" id="features">
+      <a href=""><img src="./images/logo.svg" alt=""></a>
+
+      <img id="mobile-CTA" src="./images/icon-menu.svg" alt="menu-open" style="height: 25px;" class="menu-open">
+      <nav>
+        <img id="mobile-CTA-exit" src="./images/icon-close-menu.svg" alt="menu" class="menu-exit"> 
+        <ul class="primary-nav">
+          <li class="primary-nav__dropdown"><a href="#">
+            Features
+              <img src="./images/icon-arrow-up.svg" alt="arrow-up" class="arrow-up">
+              <img src="./images/icon-arrow-down.svg" alt="arrow-down" class="arrow-down">
+                <ul>
+                  <li><a href=""><img src="./images/icon-todo.svg" alt="todo">Todo List</a></li>
+                  <li><a href=""><img src="./images/icon-calendar.svg" alt="calender">Calender</a></li>
+                  <li><a href=""><img src="./images/icon-reminders.svg" alt="remainder">Remainder</a></li>
+                  <li><a href=""><img src="./images/icon-planning.svg" alt="planning">Planning</a></li>
+                </a>
+              </ul>
+          </li>
+          <li class="primary-nav__dropdown"><a href="#">
+            Company
+            <img src="./images/icon-arrow-up.svg" alt="arrow-up" class="arrow-up">
+            <img src="./images/icon-arrow-down.svg" alt="arrow-down" class="arrow-down">
+              <ul>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+           </a>
+         </li>           
+          <li><a href="#">Careers</a></li>           
+          <li><a href="#">About</a></li>           
+        </ul>
+
+        <ul class="secondary-nav">
+          <li><a href="#">Login</a></li>
+          <li><a href="#" class="secondary-nav-register">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="section">
+    <div class="section-container">
+      <div class="left-col">
+        
+          <h1>Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline processes, 
+            create team rituals, and watch productivity soar.
+          </p>
+          <div class="CTA">
+            <a href="#">Learn more</a>
+          </div>
+        
+    
+        <div class="sponsor">
+          <img src="./images/client-databiz.svg" alt="databiz">
+          <img src="./images/client-audiophile.svg" alt="audiophile">
+          <img src="./images/client-meet.svg" alt="meet">
+          <img src="./images/client-maker.svg" alt="maker">
+        </div>
+      </div>
+      <div class="right-col">
+        <img src="./images/image-hero-mobile.png" alt="hero" class="right-col__img_mobile">
+        <img src="./images/image-hero-desktop.png" alt="" class="right-col__img_desktop">
+      </div>
+    </div>
+
+  </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Tunde Adelani</a>.
+  </div>
+</body>
+
+  
+<script src="intro.js">
+  
+</script>
+</html>
